@@ -6,7 +6,7 @@ const SideNav = () => (
     <div style={styles.logoContainer}>
       <Link to="/" style={styles.logoLink}>
         <img
-          src="/simon-savannah-logo.png"
+          src={`${process.env.PUBLIC_URL}/simon-savannah-logo.png`}
           alt="Simon Savannah Logo"
           style={styles.logo}
         />

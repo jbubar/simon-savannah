@@ -4,23 +4,17 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 const mixedMediaWorks = [
   {
-    original: "/simon-savannah-horse-print.png",
-    thumbnail: "/simon-savannah-horse-print.png",
-    description:
-      "Urban Collage: A combination of photography, paint, and found objects depicting city life.",
+    original: `${process.env.PUBLIC_URL}/simon-savannah-mixed-media-horse.png`,
+    thumbnail: `${process.env.PUBLIC_URL}/simon-savannah-mixed-media-horse.png`,
+    description: `Textured Memories: An exploration of texture using various fabrics and paint techniques.`,
   },
   {
-    original: "/simon-savannah-mixed-media-horse-head.png",
-    thumbnail: "/simon-savannah-mixed-media-horse-head.png",
+    original: `${process.env.PUBLIC_URL}/simon-savannah-mixed-media-horse-head.png`,
+    thumbnail: `${process.env.PUBLIC_URL}/simon-savannah-mixed-media-horse-head.png`,
     description:
       "Digital Nostalgia: A blend of traditional painting techniques with digital art elements.",
   },
-  {
-    original: "/simon-savannah-mixed-media-horse.png",
-    thumbnail: "/simon-savannah-mixed-media-horse.png",
-    description:
-      "Textured Memories: An exploration of texture using various fabrics and paint techniques.",
-  },
+
   // Add more mixed media works as needed
 ];
 

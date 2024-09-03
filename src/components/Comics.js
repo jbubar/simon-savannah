@@ -4,8 +4,8 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 const comicWorks = [
   {
-    original: "/andrewComic.jpg",
-    thumbnail: "/andrewComic.jpg",
+    original: `${process.env.PUBLIC_URL}/andrewComic.jpg`,
+    thumbnail: `${process.env.PUBLIC_URL}/andrewComic.jpg`,
   },
 
   // Add more images
