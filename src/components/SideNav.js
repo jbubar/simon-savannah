@@ -14,32 +14,32 @@ const SideNav = () => (
     </div>
     <ul style={styles.navList}>
       <li>
-        <Link to="/comics" style={styles.navItem}>
+        <Link to="/simon-savannah/comics" style={styles.navItem}>
           Comics
         </Link>
       </li>
       <li>
-        <Link to="/paintings" style={styles.navItem}>
+        <Link to="/simon-savannah/paintings" style={styles.navItem}>
           Paintings
         </Link>
       </li>
       <li>
-        <Link to="/drawings" style={styles.navItem}>
+        <Link to="/simon-savannah/drawings" style={styles.navItem}>
           Drawings
         </Link>
       </li>
       <li>
-        <Link to="/prints" style={styles.navItem}>
+        <Link to="/simon-savannah/prints" style={styles.navItem}>
           Prints
         </Link>
       </li>
       <li>
-        <Link to="/poetry" style={styles.navItem}>
+        <Link to="/simon-savannah/poetry" style={styles.navItem}>
           Poetry
         </Link>
       </li>
       <li>
-        <Link to="/mixed-media" style={styles.navItem}>
+        <Link to="/simon-savannah/mixed-media" style={styles.navItem}>
           Mixed Media
         </Link>
       </li>

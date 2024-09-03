@@ -1,6 +1,11 @@
 // src/App.js
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Routes,
+  Navigate,
+} from "react-router-dom";
 import SideNav from "./components/SideNav";
 import SplashPage from "./components/SplashPage";
 import Comics from "./components/Comics";
@@ -17,13 +22,20 @@ function App() {
         <SideNav />
         <div style={styles.content}>
           <Routes>
-            <Route path="/" element={<SplashPage />} />
-            <Route path="/comics" element={<Comics />} />
-            <Route path="/paintings" element={<Paintings />} />
-            <Route path="/drawings" element={<Drawings />} />
-            <Route path="/prints" element={<Prints />} />
-            <Route path="/poetry" element={<Poetry />} />
-            <Route path="/mixed-media" element={<MixedMedia />} />
+            <Route path="/simon-savannah" element={<SplashPage />} />
+            <Route path="/simon-savannah/comics" element={<Comics />} />
+            <Route path="/simon-savannah/paintings" element={<Paintings />} />
+            <Route path="/simon-savannah/drawings" element={<Drawings />} />
+            <Route path="/simon-savannah/prints" element={<Prints />} />
+            <Route path="/simon-savannah/poetry" element={<Poetry />} />
+            <Route
+              path="/simon-savannah/mixed-media"
+              element={<MixedMedia />}
+            />
+            <Route
+              path="/"
+              element={<Navigate replace to="/simon-savannah" />}
+            />
           </Routes>
         </div>
       </div>
@@ -36,7 +48,7 @@ const styles = {
     display: "flex",
   },
   content: {
-    marginLeft: "200px", // This should match the width of the SideNav
+    marginLeft: "200px",
     padding: "20px",
     flex: 1,
   },

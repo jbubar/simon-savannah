@@ -15,7 +15,7 @@ const SplashPage = () => {
         </p>
       </div>
       <img
-        src="/simon-savannah-horse-print.png"
+        src={`${process.env.PUBLIC_URL}/simon-savannah-horse-print.png`}
         alt="Simon Savannah"
         style={styles.frontPiece}
       />
